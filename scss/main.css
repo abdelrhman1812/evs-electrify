@@ -897,6 +897,14 @@ header .main-slider .stars i.bottom {
   background-color: #198754;
 }
 
+.scroll-fixed {
+  background-color: #198754;
+  position: fixed;
+  height: 3px;
+  width: 10px;
+  z-index: 3;
+}
+
 .main-page-adenda {
   background-image: url("../image/speakers");
 }

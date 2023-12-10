@@ -970,3 +970,12 @@ header {
 
     }
 }
+
+
+.scroll-fixed {
+    background-color: $dark-main;
+    position: fixed;
+    height: 3px;
+    width: 10px;
+    z-index: 3;
+}

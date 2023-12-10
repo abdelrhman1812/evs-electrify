@@ -27,11 +27,27 @@ window.addEventListener("scroll", changeColor);
 
 
 
+/* ----------- */
 
+let scroll_fixed = document.querySelector(".scroll-fixed")
+console.log(scroll_fixed)
+
+window.addEventListener('scroll', () => {
+
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    // console.log(document.documentElement.scrollHeight)
+    // console.log(height)
+
+
+    let scrollTop = document.documentElement.scrollTop;
+    // console.log(scrollTop)
+    scroll_fixed.style.width = `${(scrollTop / height) * 100}%`
+
+
+})
 
 /*-----------------------  Photo ---------------------*/
 window.addEventListener("load", function () {
-
     const imgInfo = document.querySelector(".info");
     const imgHtml = document.querySelector(".imgHtml");
     const iClose = document.querySelector(".close");
@@ -76,7 +92,7 @@ window.addEventListener("load", function () {
 })
 
 
-/* increment Number in section in home page */
+/* ---------- Countr ---------- */
 let nums = document.querySelectorAll(".num")
 console.log(nums)
 
