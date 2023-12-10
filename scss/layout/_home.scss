@@ -41,10 +41,9 @@
     }
 }
 
+/* ---------- Header --------- */
 header {
-
     position: relative;
-
 
     .main-slider {
         height: 100vh;
@@ -52,7 +51,7 @@ header {
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        background-image: url('../../image/header/main-image.png');
+        background-image: url('../image/header/main-image.png');
 
         .layout {
             top: 0;
@@ -64,7 +63,7 @@ header {
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            background-color: #0000008c;
+            background-color: #1d291d94;
 
             .text-main {
                 color: $light;
@@ -183,9 +182,9 @@ header {
 }
 
 
+
 .advansed {
 
-    // background-image: url('../../image/wave\ \(9\).svg');
     position: relative;
     padding: 160px 10px;
     box-shadow: $shadow;
@@ -262,47 +261,40 @@ header {
         }
 
         &:hover {
-            background-color: $dark-main;
             transition: all 0.5s;
+            background-color: $dark-main;
 
         }
 
         &:hover .text-adv p {
-            color: $light !important;
             transition: all 0.5s;
+            color: $light !important;
 
         }
 
         &:hover .text-adv span {
-            color: $light !important;
             transition: all 0.5s;
+            color: $light !important;
 
         }
 
         &:hover i {
-            border-color: $light !important;
             color: $light;
             transform: scale(1.2);
             transition: all 0.5s;
+            border-color: $light !important;
         }
 
         &:hover::before {
-            background-color: $light;
             transition: all 0.5s;
+            background-color: $light;
 
         }
     }
 }
 
 
-/* ---------- section about-us --------- */
-
-.container {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 1600px !important;
-
-}
+/* ---------- section about-us ---------- */
 
 .about-us {
     .container {
@@ -312,14 +304,12 @@ header {
 
     }
 
-
-
     padding: 100px 0;
     position: relative;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-image: url('../../image/about/about-evs.jpg');
+    background-image: url('../image/about/about-evs.jpg');
 
 
     .about-text {
@@ -377,7 +367,6 @@ header {
 
 
             .item {
-                // clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
                 transition: all 0.5s;
 
                 &:hover {
@@ -413,11 +402,7 @@ header {
 }
 
 
-
-
-
-
-/* --------- services -------  */
+/* ---------- services ----------  */
 .services {
     padding: 30px 0;
     position: relative;
@@ -451,7 +436,7 @@ header {
 /* --------- counter --------- */
 
 .counter {
-    padding-bottom: 60px;
+    padding: 100px 0;
 
     h2 {
         @extend %heading;
@@ -461,7 +446,7 @@ header {
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        background-image: url('../../image/counter-bg.png');
+        background-image: url('../image/counter-bg.png');
 
         padding: 20px;
 
@@ -546,11 +531,10 @@ header {
 
         height: 60vh;
         overflow: hidden;
-        background-attachment: fixed;
-
-        background-image: url('../../image/speakers');
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
+        background-image: url('../image/speakers');
 
         h3 {
             color: $light;
@@ -585,7 +569,7 @@ header {
             justify-content: center;
             background-position: center;
             background-attachment: fixed;
-            background-image: url('../../image/speaker-items.jpg');
+            background-image: url('../image/speaker-items.jpg');
 
 
             .item {
@@ -627,9 +611,9 @@ header {
     }
 }
 
-/* --------- Gallary --------- */
+/* ---------  Gallary ---------  */
 .gallary {
-    padding: 30px;
+    padding: 100px 0;
 
     h2 {
         @extend %heading;
@@ -687,18 +671,18 @@ header {
                 bottom: 0;
                 z-index: 1;
                 padding: 10px;
-                transition: all 1s;
                 display: flex;
-                justify-content: center;
-                align-items: center;
                 position: absolute;
+                transition: all 1s;
+                align-items: center;
+                justify-content: center;
                 transform: translate(-100%);
                 background-color: $dark-main;
 
                 p {
                     color: $light;
-                    font-size: 16pxpx;
                     padding: 10px;
+                    font-size: 16px;
                     font-weight: bold;
                 }
 
@@ -709,28 +693,28 @@ header {
             }
 
             .y {
-                transform: translatey(100%);
                 transition: all 1s;
+                transform: translatey(100%);
 
 
             }
 
             .r {
-                transform: translatex(100%);
                 transition: all 1s;
+                transform: translatex(100%);
 
             }
 
             .t {
-                transform: translatey(-100%);
                 transition: all 1s;
+                transform: translatey(-100%);
 
             }
         }
 
         &:hover .layout {
-            transform: translate(0);
             transition: all 1s;
+            transform: translate(0);
 
         }
 
@@ -741,33 +725,33 @@ header {
         }
 
         &:hover .y {
-            transform: translatey(0);
             transition: all 1s;
+            transform: translatey(0);
 
         }
 
         &:hover .img-y {
-            transform: translatey(-100%);
             transition: all 1s;
+            transform: translatey(-100%);
 
         }
 
 
         &:hover .r {
-            transform: translatey(0);
             transition: all 1s;
+            transform: translatey(0);
 
         }
 
         &:hover .img-r {
-            transform: translatex(-100%);
             transition: all 1s;
+            transform: translatex(-100%);
 
         }
 
         &:hover .img-t {
-            transform: translatey(100%);
             transition: all 1s;
+            transform: translatey(100%);
 
         }
 
@@ -779,7 +763,7 @@ header {
 }
 
 
-/* --------  News ---------- */
+/* ---------  News --------- */
 
 .news {
     overflow: hidden;
@@ -788,7 +772,7 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-image: url('../../image/about/about-evs.jpg');
+    background-image: url('../image/about/about-evs.jpg');
 
     .layout {
         padding: 60px 0;
@@ -834,20 +818,20 @@ header {
                     padding-left: 10px;
 
                     &::before {
-                        content: "";
+                        top: 0;
                         left: 0;
                         bottom: 0;
-                        top: 0;
-                        border-left: 5px solid $main-color;
+                        content: "";
                         position: absolute;
+                        border-left: 5px solid $main-color;
                         background-color: $main-color;
                     }
                 }
 
                 small {
+                    color: $light;
+                    color: $light;
                     font-size: 12px;
-                    color: $light;
-                    color: $light;
 
                 }
             }
@@ -891,13 +875,13 @@ header {
     }
 
     button {
-        background-color: $dark-main;
         border: none;
+        color: $light;
         margin-left: 10px;
         padding: 7px 15px;
         border-radius: 30px;
-        color: $light;
         transition: all 0.5s;
+        background-color: $dark-main;
 
 
         &:hover {
@@ -925,12 +909,12 @@ header {
 
     .item {
         margin: 0 5px;
-        text-align: center;
         display: flex;
-        justify-content: center;
-        align-items: center;
         height: 300px;
+        text-align: center;
+        align-items: center;
         box-shadow: $shadow;
+        justify-content: center;
 
         overflow: hidden;
 
@@ -943,15 +927,15 @@ header {
 }
 
 
-/* update */
+/* --------- update --------- */
 
 .update {
-
+    margin-top: 60px;
     padding: 30px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-image: url('../../image/news/news-bg.jpg');
+    background-image: url('../image/news/news-bg.jpg');
 
     .data {
         display: flex;
@@ -984,110 +968,5 @@ header {
         }
 
 
-    }
-}
-
-footer {
-    padding: 60px 0 0 0;
-    background-color: #000;
-
-    .logo {
-        text-align: center;
-
-        img {
-            width: 200px !important;
-            // filter: brightness(0) invert(1);
-        }
-
-        p {
-            text-align: start;
-            color: $light;
-            margin-block: 20px;
-        }
-
-
-    }
-
-    .contact-us {
-        h3 {
-            color: $light;
-        }
-
-        .item {
-            margin-block: 20px;
-
-            i {
-                color: $light;
-            }
-
-            span {
-                color: #f5f5f5b5;
-            }
-        }
-    }
-
-    .times {
-        h3 {
-            color: $light;
-        }
-
-        ul {
-            padding: 10px;
-        }
-
-        ul li {
-            color: #f5f5f5b5;
-        }
-    }
-
-    .quick {
-        h3 {
-            color: $light;
-        }
-
-        ul {
-            padding: 10px;
-        }
-
-        ul li {
-            color: #f5f5f5b5;
-        }
-    }
-
-    .copyright {
-        padding: 20px 0;
-        overflow: hidden;
-        margin-top: 20px;
-        border-top: 1px solid #ffffff38;
-
-        p {
-            margin: 10px 0;
-            color: $light;
-        }
-
-        span {
-            color: $main-color;
-        }
-
-        .social {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .icons {
-                width: 40px;
-                height: 40px;
-                display: flex;
-                margin: 0 5px;
-                align-items: center;
-                border-radius: 50%;
-                justify-content: center;
-
-                i {
-                    color: $main-color;
-                    font-size: 22px;
-                }
-            }
-        }
     }
 }

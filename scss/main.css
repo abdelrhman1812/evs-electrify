@@ -211,6 +211,7 @@ nav.navbar ul {
   background-color: #198754;
 }
 
+/* ---------- Header --------- */
 header {
   position: relative;
 }
@@ -220,7 +221,7 @@ header .main-slider {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("../../image/header/main-image.png");
+  background-image: url("../image/header/main-image.png");
 }
 header .main-slider .layout {
   top: 0;
@@ -232,7 +233,7 @@ header .main-slider .layout {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5490196078);
+  background-color: rgba(29, 41, 29, 0.5803921569);
 }
 header .main-slider .layout .text-main {
   color: #fff;
@@ -379,42 +380,36 @@ header .main-slider .stars i.bottom {
   color: #fff;
 }
 .advansed .adv:hover {
-  background-color: #198754;
   transition: all 0.5s;
+  background-color: #198754;
 }
 .advansed .adv:hover .text-adv p {
-  color: #fff !important;
   transition: all 0.5s;
+  color: #fff !important;
 }
 .advansed .adv:hover .text-adv span {
-  color: #fff !important;
   transition: all 0.5s;
+  color: #fff !important;
 }
 .advansed .adv:hover i {
-  border-color: #fff !important;
   color: #fff;
   transform: scale(1.2);
   transition: all 0.5s;
+  border-color: #fff !important;
 }
 .advansed .adv:hover::before {
-  background-color: #fff;
   transition: all 0.5s;
+  background-color: #fff;
 }
 
-/* ---------- section about-us --------- */
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 1600px !important;
-}
-
+/* ---------- section about-us ---------- */
 .about-us {
   padding: 100px 0;
   position: relative;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("../../image/about/about-evs.jpg");
+  background-image: url("../image/about/about-evs.jpg");
 }
 .about-us .container {
   margin: 0 auto;
@@ -492,7 +487,7 @@ header .main-slider .stars i.bottom {
   filter: brightness(1) invert(0) !important;
 }
 
-/* --------- services -------  */
+/* ---------- services ----------  */
 .services {
   padding: 30px 0;
   position: relative;
@@ -520,13 +515,13 @@ header .main-slider .stars i.bottom {
 
 /* --------- counter --------- */
 .counter {
-  padding-bottom: 60px;
+  padding: 100px 0;
 }
 .counter .content {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("../../image/counter-bg.png");
+  background-image: url("../image/counter-bg.png");
   padding: 20px;
 }
 .counter .content .item {
@@ -581,10 +576,10 @@ header .main-slider .stars i.bottom {
 .speakers .data {
   height: 60vh;
   overflow: hidden;
-  background-attachment: fixed;
-  background-image: url("../../image/speakers");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-image: url("../image/speakers");
 }
 .speakers .data h3 {
   color: #fff;
@@ -609,7 +604,7 @@ header .main-slider .stars i.bottom {
   justify-content: center;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("../../image/speaker-items.jpg");
+  background-image: url("../image/speaker-items.jpg");
 }
 @media (min-width: 768px) {
   .speakers .data .images {
@@ -650,9 +645,9 @@ header .main-slider .stars i.bottom {
   background-color: #198754;
 }
 
-/* --------- Gallary --------- */
+/* ---------  Gallary ---------  */
 .gallary {
-  padding: 30px;
+  padding: 100px 0;
 }
 .gallary .item {
   overflow: hidden;
@@ -694,18 +689,18 @@ header .main-slider .stars i.bottom {
   bottom: 0;
   z-index: 1;
   padding: 10px;
-  transition: all 1s;
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
+  transition: all 1s;
+  align-items: center;
+  justify-content: center;
   transform: translate(-100%);
   background-color: #198754;
 }
 .gallary .item figure .layout p {
   color: #fff;
-  font-size: 16pxpx;
   padding: 10px;
+  font-size: 16px;
   font-weight: bold;
 }
 .gallary .item figure .layout ul li {
@@ -713,50 +708,50 @@ header .main-slider .stars i.bottom {
   font-weight: bold;
 }
 .gallary .item figure .y {
-  transform: translatey(100%);
   transition: all 1s;
+  transform: translatey(100%);
 }
 .gallary .item figure .r {
-  transform: translatex(100%);
   transition: all 1s;
+  transform: translatex(100%);
 }
 .gallary .item figure .t {
-  transform: translatey(-100%);
   transition: all 1s;
+  transform: translatey(-100%);
 }
 .gallary .item:hover .layout {
-  transform: translate(0);
   transition: all 1s;
+  transform: translate(0);
 }
 .gallary .item:hover img {
   transform: translate(100%);
   transition: all 1s;
 }
 .gallary .item:hover .y {
-  transform: translatey(0);
   transition: all 1s;
+  transform: translatey(0);
 }
 .gallary .item:hover .img-y {
-  transform: translatey(-100%);
   transition: all 1s;
+  transform: translatey(-100%);
 }
 .gallary .item:hover .r {
-  transform: translatey(0);
   transition: all 1s;
+  transform: translatey(0);
 }
 .gallary .item:hover .img-r {
-  transform: translatex(-100%);
   transition: all 1s;
+  transform: translatex(-100%);
 }
 .gallary .item:hover .img-t {
-  transform: translatey(100%);
   transition: all 1s;
+  transform: translatey(100%);
 }
 .gallary .item:hover h3 {
   opacity: 0;
 }
 
-/* --------  News ---------- */
+/* ---------  News --------- */
 .news {
   overflow: hidden;
   margin-top: 60px;
@@ -764,7 +759,7 @@ header .main-slider .stars i.bottom {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("../../image/about/about-evs.jpg");
+  background-image: url("../image/about/about-evs.jpg");
 }
 .news .layout {
   padding: 60px 0;
@@ -805,18 +800,18 @@ header .main-slider .stars i.bottom {
   padding-left: 10px;
 }
 .news article figure figcaption h4::before {
-  content: "";
+  top: 0;
   left: 0;
   bottom: 0;
-  top: 0;
-  border-left: 5px solid #49906e;
+  content: "";
   position: absolute;
+  border-left: 5px solid #49906e;
   background-color: #49906e;
 }
 .news article figure figcaption small {
+  color: #fff;
+  color: #fff;
   font-size: 12px;
-  color: #fff;
-  color: #fff;
 }
 .news aside article {
   display: flex;
@@ -843,13 +838,13 @@ header .main-slider .stars i.bottom {
   transition: all 0.5s;
 }
 .news button {
-  background-color: #198754;
   border: none;
+  color: #fff;
   margin-left: 10px;
   padding: 7px 15px;
   border-radius: 30px;
-  color: #fff;
   transition: all 0.5s;
+  background-color: #198754;
 }
 .news button:hover {
   transition: all 0.5s;
@@ -861,25 +856,26 @@ header .main-slider .stars i.bottom {
 }
 .support .item {
   margin: 0 5px;
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 300px;
+  text-align: center;
+  align-items: center;
   box-shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px, rgba(145, 158, 171, 0.14) 0px 4px 5px 0px, rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  justify-content: center;
   overflow: hidden;
 }
 .support .item img {
   width: 75% !important;
 }
 
-/* update */
+/* --------- update --------- */
 .update {
+  margin-top: 60px;
   padding: 30px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-image: url("../../image/news/news-bg.jpg");
+  background-image: url("../image/news/news-bg.jpg");
 }
 .update .data {
   display: flex;
@@ -908,6 +904,254 @@ header .main-slider .stars i.bottom {
   background-color: #198754;
 }
 
+.main-page-adenda {
+  background-image: url("../image/speakers");
+}
+
+.agenda {
+  padding: 100px 0;
+  min-height: 100vh;
+}
+.agenda h2 {
+  color: #49906e;
+}
+.agenda .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.agenda .text h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px;
+  color: #49906e;
+}
+.agenda .text h3::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 10px;
+  position: absolute;
+  border-left: 7px solid #49906e;
+}
+.agenda .text p {
+  color: #000;
+  font-size: 22px;
+  line-height: 1.9;
+}
+.agenda img {
+  border-radius: 20px;
+}
+
+.main-page-register {
+  background-image: url("../image/speakers");
+}
+
+.register {
+  padding: 100px 0;
+  min-height: 100vh;
+}
+.register h2 {
+  color: #49906e;
+}
+
+.main-page-why-exhibit {
+  background-image: url("../image/speakers");
+}
+
+.why-exhibit {
+  padding: 100px 0;
+  min-height: 100vh;
+}
+.why-exhibit h2 {
+  color: #49906e;
+}
+.why-exhibit p {
+  padding: 20px;
+  font-size: 22px;
+  line-height: 1.8;
+  position: relative;
+  color: #777;
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px, rgba(145, 158, 171, 0.14) 0px 4px 5px 0px, rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+}
+.why-exhibit p::before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  border-left: 5px solid #198754;
+}
+
+.main-page-brochure {
+  background-image: url("../image/speakers");
+}
+
+.brochure {
+  padding: 100px 0;
+  min-height: 100vh;
+}
+.brochure h2 {
+  color: #49906e;
+}
+.brochure img {
+  border-radius: 10px;
+}
+
+.imgHtml {
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  box-sizing: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../image/about/about-evs.jpg");
+}
+.imgHtml i {
+  cursor: pointer;
+  color: #fff;
+}
+
+.main-page-photo {
+  background-image: url("../image/speakers");
+}
+
+.photo {
+  padding: 100px 0;
+  min-height: 100vh;
+}
+.photo h2 {
+  color: #49906e;
+}
+.photo figure {
+  overflow: hidden;
+  border-radius: 10px;
+}
+@media (min-width: 767px) {
+  .photo figure img {
+    height: 350px;
+  }
+}
+
+.main-page-video {
+  background-image: url("../image/speakers");
+}
+
+.video {
+  padding: 100px 0;
+  min-height: 100vh;
+}
+.video .item {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #49906e;
+}
+.video .item video {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.video .item button {
+  margin: 0;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #49906e;
+}
+.video .modal .modal-content {
+  background-color: #000;
+  height: 80vh;
+}
+.video .modal .modal-content .modal-header {
+  border: none;
+  background-color: #49906e;
+}
+.video .modal .modal-content .modal-header h5 {
+  color: #fff;
+  font-size: 26px !important;
+  font-weight: bold;
+}
+.video .modal .modal-content .modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video .modal .modal-content .modal-body video {
+  width: 100%;
+}
+.video .modal .modal-content .modal-footer {
+  border: none;
+}
+.video .modal .modal-content .modal-footer button i {
+  font-size: 26px;
+  font-weight: bold;
+  color: #198754 !important;
+}
+
+.main-page-contact {
+  background-image: url("../image/speakers");
+}
+
+.contact {
+  padding: 80px 0;
+  min-height: 100vh;
+}
+.contact .container {
+  max-width: 1200px !important;
+}
+.contact .item {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: auto;
+}
+.contact .item .icon {
+  background-color: #198754;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  font-size: 26px;
+  border-radius: 50%;
+}
+.contact .item .text {
+  margin: 10px;
+}
+.contact .item .text p {
+  margin: 0;
+}
+.contact form {
+  margin-top: 30px;
+}
+.contact form input:focus,
+.contact form textarea:focus {
+  box-shadow: none;
+  border-color: #49906e;
+}
+@media (min-width: 767px) {
+  .contact form .email-name {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 767px) {
+  .contact form .email-name > input {
+    width: 49% !important;
+  }
+}
+
+/* --------- Footer --------- */
 footer {
   padding: 60px 0 0 0;
   background-color: #000;
@@ -983,251 +1227,4 @@ footer .copyright .social .icons {
 footer .copyright .social .icons i {
   color: #49906e;
   font-size: 22px;
-}
-
-.main-page-adenda {
-  background-image: url("../../image/speakers");
-}
-
-.agenda {
-  padding: 100px 0;
-  min-height: 100vh;
-}
-.agenda h2 {
-  color: #49906e;
-}
-.agenda .text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.agenda .text h3 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  position: relative;
-  padding-left: 20px;
-  color: #49906e;
-}
-.agenda .text h3::before {
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 10px;
-  position: absolute;
-  border-left: 7px solid #49906e;
-}
-.agenda .text p {
-  color: #000;
-  font-size: 22px;
-  line-height: 1.9;
-}
-.agenda img {
-  border-radius: 20px;
-}
-
-.main-page-register {
-  background-image: url("../../image/speakers");
-}
-
-.register {
-  padding: 100px 0;
-  min-height: 100vh;
-}
-.register h2 {
-  color: #49906e;
-}
-
-.main-page-why-exhibit {
-  background-image: url("../../image/speakers");
-}
-
-.why-exhibit {
-  padding: 100px 0;
-  min-height: 100vh;
-}
-.why-exhibit h2 {
-  color: #49906e;
-}
-.why-exhibit p {
-  padding: 20px;
-  font-size: 22px;
-  line-height: 1.8;
-  position: relative;
-  color: #777;
-  box-shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px, rgba(145, 158, 171, 0.14) 0px 4px 5px 0px, rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
-}
-.why-exhibit p::before {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  content: "";
-  position: absolute;
-  border-left: 5px solid #198754;
-}
-
-.main-page-brochure {
-  background-image: url("../../image/speakers");
-}
-
-.brochure {
-  padding: 100px 0;
-  min-height: 100vh;
-}
-.brochure h2 {
-  color: #49906e;
-}
-.brochure img {
-  border-radius: 10px;
-}
-
-.imgHtml {
-  width: 600px;
-  height: 600px;
-  border-radius: 10px;
-  box-sizing: 100% 100%;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../../image/about/about-evs.jpg");
-}
-.imgHtml i {
-  cursor: pointer;
-  color: #fff;
-}
-
-.main-page-photo {
-  background-image: url("../../image/speakers");
-}
-
-.photo {
-  padding: 100px 0;
-  min-height: 100vh;
-}
-.photo h2 {
-  color: #49906e;
-}
-.photo figure {
-  overflow: hidden;
-  border-radius: 10px;
-}
-@media (min-width: 767px) {
-  .photo figure img {
-    height: 350px;
-  }
-}
-
-.main-page-video {
-  background-image: url("../../image/speakers");
-}
-
-.video {
-  padding: 100px 0;
-  min-height: 100vh;
-}
-.video .item {
-  overflow: hidden;
-  border-radius: 10px;
-  background-color: #49906e;
-}
-.video .item video {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.video .item button {
-  margin: 0;
-  width: 100%;
-  border: none;
-  padding: 10px;
-  color: #fff;
-  font-size: 22px;
-  font-weight: bold;
-  background-color: #49906e;
-}
-.video .modal .modal-content {
-  background-color: #000;
-  height: 80vh;
-}
-.video .modal .modal-content .modal-header {
-  border: none;
-  background-color: #49906e;
-}
-.video .modal .modal-content .modal-header h5 {
-  color: #fff;
-  font-size: 26px !important;
-  font-weight: bold;
-}
-.video .modal .modal-content .modal-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.video .modal .modal-content .modal-body video {
-  width: 100%;
-}
-.video .modal .modal-content .modal-footer {
-  border: none;
-}
-.video .modal .modal-content .modal-footer button i {
-  font-size: 26px;
-  font-weight: bold;
-  color: #198754 !important;
-}
-
-.main-page-contact {
-  background-image: url("../../image/speakers");
-}
-
-.contact {
-  padding: 80px 0;
-  min-height: 100vh;
-}
-.contact .container {
-  max-width: 1200px !important;
-}
-.contact .item {
-  display: flex;
-  align-items: center;
-  background-color: #eee;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin: auto;
-}
-.contact .item .icon {
-  background-color: #198754;
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #fff;
-  font-size: 26px;
-  border-radius: 50%;
-}
-.contact .item .text {
-  margin: 10px;
-}
-.contact .item .text p {
-  margin: 0;
-}
-.contact form {
-  margin-top: 30px;
-}
-.contact form input:focus,
-.contact form textarea:focus {
-  box-shadow: none;
-  border-color: #49906e;
-}
-@media (min-width: 767px) {
-  .contact form .email-name {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 767px) {
-  .contact form .email-name > input {
-    width: 49% !important;
-  }
 }/*# sourceMappingURL=main.css.map */
