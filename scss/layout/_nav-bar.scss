@@ -1,0 +1,94 @@
+nav.navbar {
+    z-index: 1;
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    padding-left: 20px;
+
+
+    .navbar-toggler {
+        i {
+            color: $main-color;
+            border: 1px solid $dark-main;
+            padding: 10px;
+            border-radius: 7px;
+        }
+    }
+
+    .logo {
+        filter: brightness(0) invert(1);
+        width: 300px !important;
+
+    }
+
+
+
+
+    ul li a {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-right: 15px;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $main-color !important;
+        }
+
+    }
+
+    ul.dropdown-menu {
+        border-top: 5px solid #ffff;
+        background-color: $main-color;
+
+        li a {
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-right: 15px;
+            color: $light !important;
+
+            &:hover {
+                color: $main-color !important;
+            }
+
+
+        }
+    }
+
+
+
+
+    ul {
+
+        transition: all 3s;
+
+
+        @include responsive-mob(991px) {
+            background: linear-gradient(170deg, rgba(0, 0, 0, 0.98) 50%, rgba(43, 112, 83, 0.98) 100%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 80%;
+            padding-top: 60px;
+            transition: all 3s;
+
+            li {
+                padding: 10px 20px;
+                border-bottom: 1px solid #ffffff45 !important;
+
+                a {
+                    color: $light !important;
+
+                    &:hover {
+                        margin-left: 10px;
+                        transition: all 0.5s;
+                        color: $dark-main !important;
+                    }
+                }
+            }
+
+        }
+    }
+}

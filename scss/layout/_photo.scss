@@ -1,0 +1,52 @@
+.imgHtml {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    box-sizing: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../image/about/about-evs.jpg');
+
+    i {
+        cursor: pointer;
+        color: $light
+    }
+
+
+}
+
+.main-page-photo {
+    @extend %main-page;
+    background-image: url('../../image/speakers');
+
+
+}
+
+.photo {
+    padding: 100px 0;
+    min-height: 100vh;
+
+    h2 {
+        @extend %heading;
+        color: $main-color;
+    }
+
+    figure {
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+            @include responsive(767px) {
+
+                height: 350px;
+            }
+        }
+
+
+
+    }
+
+
+
+
+}

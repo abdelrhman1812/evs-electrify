@@ -1,0 +1,95 @@
+.main-page-video {
+    @extend %main-page;
+    background-image: url('../../image/speakers');
+
+
+}
+
+.video {
+    padding: 100px 0;
+    min-height: 100vh;
+
+    .item {
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: $main-color;
+
+
+        video {
+
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        button {
+            margin: 0;
+            width: 100%;
+            border: none;
+            padding: 10px;
+            color: $light;
+            font-size: 22px;
+            font-weight: bold;
+            background-color: $main-color;
+
+        }
+    }
+
+    .modal {
+
+        .modal-content {
+            background-color: $black;
+            height: 80vh;
+
+            .modal-header {
+                border: none;
+                background-color: $main-color;
+
+
+
+
+                h5 {
+
+                    color: $light;
+                    font-size: 26px !important;
+                    font-weight: bold;
+                }
+
+
+            }
+
+            .modal-body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                video {
+                    width: 100%;
+                }
+            }
+
+            .modal-footer {
+                border: none;
+
+                button {
+                    i {
+                        font-size: 26px;
+                        font-weight: bold;
+                        color: $dark-main !important;
+
+                    }
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+}

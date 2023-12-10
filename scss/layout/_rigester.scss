@@ -1,0 +1,18 @@
+.main-page-register {
+    @extend %main-page;
+    background-image: url('../../image/speakers');
+
+
+}
+
+.register {
+    padding: 100px 0;
+    min-height: 100vh;
+
+    h2 {
+        @extend %heading;
+        color: $main-color;
+    }
+
+
+}
