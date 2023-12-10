@@ -106,11 +106,9 @@ a {
 }
 
 nav.navbar {
-  z-index: 1;
   z-index: 2;
   width: 100%;
   position: fixed;
-  padding-left: 20px;
 }
 nav.navbar .navbar-toggler i {
   color: #49906e;
@@ -118,9 +116,9 @@ nav.navbar .navbar-toggler i {
   padding: 10px;
   border-radius: 7px;
 }
-nav.navbar .logo {
+nav.navbar .logo img {
   filter: brightness(0) invert(1);
-  width: 300px !important;
+  width: 100px !important;
 }
 nav.navbar ul li a {
   font-size: 14px;
@@ -239,7 +237,7 @@ header .main-slider .layout .text-main {
   color: #fff;
   display: flex;
   max-width: 600px;
-  margin-top: 200px;
+  margin-top: 150px;
   text-align: center;
   align-items: center;
   flex-direction: column;
@@ -266,8 +264,8 @@ header .main-slider .layout .text-main .lorem {
 header .main-slider .layout .text-main button {
   border: none;
   padding: 12px;
-  margin: 15px;
   display: block;
+  margin: 15px 0;
   font-size: 16px;
   border-radius: 10px;
   transition: all 0.5s;
@@ -327,6 +325,7 @@ header .main-slider .stars i.bottom {
   font-size: 10px;
 }
 
+/* ---------- advansed ----------  */
 .advansed {
   position: relative;
   padding: 160px 10px;
@@ -653,12 +652,6 @@ header .main-slider .stars i.bottom {
   overflow: hidden;
   transition: all 1s;
   border-radius: 10px;
-}
-@media (max-width: 667px) {
-  .gallary .item {
-    width: 400px;
-    margin: auto;
-  }
 }
 .gallary .item figure {
   position: relative;
@@ -1002,13 +995,17 @@ header .main-slider .stars i.bottom {
 }
 
 .imgHtml {
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
-  box-sizing: 100% 100%;
   background-size: cover;
   background-position: center;
   background-image: url("../../image/about/about-evs.jpg");
+}
+@media (min-width: 768px) {
+  .imgHtml {
+    width: 600px;
+  }
 }
 .imgHtml i {
   cursor: pointer;
@@ -1066,7 +1063,7 @@ header .main-slider .stars i.bottom {
 }
 .video .modal .modal-content {
   background-color: #000;
-  height: 80vh;
+  height: 60vh;
 }
 .video .modal .modal-content .modal-header {
   border: none;

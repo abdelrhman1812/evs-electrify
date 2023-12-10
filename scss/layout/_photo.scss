@@ -1,8 +1,11 @@
 .imgHtml {
-    width: 600px;
-    height: 600px;
+    @include responsive(768px) {
+        width: 600px;
+    }
+
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
-    box-sizing: 100% 100%;
     background-size: cover;
     background-position: center;
     background-image: url('../../image/about/about-evs.jpg');

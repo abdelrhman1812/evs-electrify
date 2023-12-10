@@ -69,7 +69,7 @@ header {
                 color: $light;
                 display: flex;
                 max-width: 600px;
-                margin-top: 200px;
+                margin-top: 150px;
                 text-align: center;
                 align-items: center;
                 flex-direction: column;
@@ -101,8 +101,8 @@ header {
                 button {
                     border: none;
                     padding: 12px;
-                    margin: 15px;
                     display: block;
+                    margin: 15px 0;
                     font-size: 16px;
                     border-radius: 10px;
                     transition: all 0.5s;
@@ -182,7 +182,7 @@ header {
 }
 
 
-
+/* ---------- advansed ----------  */
 .advansed {
 
     position: relative;
@@ -624,10 +624,10 @@ header {
         transition: all 1s;
         border-radius: 10px;
 
-        @include responsive-mob(667px) {
-            width: 400px;
-            margin: auto;
-        }
+        // @include responsive-mob(667px) {
+        //     width: 400px;
+        //     margin: auto;
+        // }
 
         figure {
             position: relative;
