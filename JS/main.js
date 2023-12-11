@@ -48,47 +48,57 @@ window.addEventListener('scroll', () => {
 
 /*-----------------------  Photo ---------------------*/
 window.addEventListener("load", function () {
-    const imgInfo = document.querySelector(".info");
-    const imgHtml = document.querySelector(".imgHtml");
-    const iClose = document.querySelector(".close");
-    const iLeft = document.querySelector(".left");
-    const iRight = document.querySelector(".right");
+    let listImage = Array.from(document.querySelectorAll('.items img'));
+    let overLay = document.querySelector('.over-lay-photo ')
+    let closeIcon = document.getElementById('close')
+    let srcImgChange = document.querySelector('.over-lay-photo img')
+    let leftIcons = document.getElementById('left')
+    let rightIcons = document.getElementById('right')
+    let count = 0
+    for (let i = 0; i < listImage.length; i++) {
 
-    const allImages = Array.from(document.querySelectorAll(".img"));
-    let counter = 0;
+        listImage[i].addEventListener('click', (e) => {
+            let srcImage = e.target.getAttribute('src')
 
-    function showImage(index) {
-        const src = allImages[index].getAttribute("src");
-        imgHtml.style.backgroundImage = `url(${src})`;
-    }
+            count = listImage.indexOf(e.target)
+            overLay.style.zIndex = "1";
+            overLay.style.opacity = "1";
+            srcImgChange.setAttribute('src', `${srcImage}`)
 
-    function movePlus() {
-        counter = (counter + 1) % allImages.length;
-        showImage(counter);
-    }
 
-    function moveNegative() {
-        counter = (counter - 1 + allImages.length) % allImages.length;
-        showImage(counter);
-    }
-
-    function closeImageInfo() {
-        imgInfo.classList.add("d-none");
-    }
-
-    // Attach event listeners
-    allImages.forEach((img, index) => {
-        img.addEventListener("click", () => {
-            imgInfo.classList.remove("d-none");
-            counter = index;
-            showImage(counter);
         });
-    });
+    }
 
-    iLeft.addEventListener("click", moveNegative);
-    iRight.addEventListener("click", movePlus);
-    iClose.addEventListener("click", closeImageInfo);
+    leftIcons.addEventListener('click', function () {
+        count--
+        if (count < 0) {
+            count = listImage.length - 1
+        }
+        let imgSrc = listImage[count].getAttribute('src')
+        srcImgChange.setAttribute('src', `${imgSrc}`)
 
+
+
+    })
+
+
+    rightIcons.addEventListener('click', function () {
+        count++
+        if (count == listImage.length) {
+            count = 0
+        }
+
+        let imgSrc = listImage[count].getAttribute('src')
+        srcImgChange.setAttribute('src', `${imgSrc}`)
+
+
+    })
+
+    closeIcon.addEventListener('click', function () {
+        overLay.style.zIndex = "-1";
+
+        overLay.style.opacity = "0";
+    })
 })
 
 

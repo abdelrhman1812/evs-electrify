@@ -1002,24 +1002,6 @@ header .main-slider .stars i.bottom {
   border-radius: 10px;
 }
 
-.imgHtml {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../../image/about/about-evs.jpg");
-}
-@media (min-width: 768px) {
-  .imgHtml {
-    width: 600px;
-  }
-}
-.imgHtml i {
-  cursor: pointer;
-  color: #fff;
-}
-
 .main-page-photo {
   background-image: url("../image/speakers");
 }
@@ -1031,14 +1013,57 @@ header .main-slider .stars i.bottom {
 .photo h2 {
   color: #49906e;
 }
-.photo figure {
-  overflow: hidden;
+.photo img {
+  cursor: pointer;
   border-radius: 10px;
 }
-@media (min-width: 767px) {
-  .photo figure img {
-    height: 350px;
-  }
+
+.over-lay-photo {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  transition: all 1s;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.over-lay-photo figure {
+  width: 50%;
+  position: relative;
+}
+.over-lay-photo i {
+  color: #fff;
+  cursor: pointer;
+}
+.over-lay-photo #right {
+  right: 0;
+  top: 50%;
+  margin: 0 10px;
+  position: absolute;
+}
+.over-lay-photo #left {
+  left: 0;
+  top: 50%;
+  margin: 0 10px;
+  position: absolute;
+}
+.over-lay-photo #close {
+  top: 0;
+  right: 0;
+  margin: 10px;
+  padding: 10px;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid #49906e;
+}
+.over-lay-photo #close:hover {
+  color: #fff;
+  background-color: #49906e;
 }
 
 .main-page-video {
