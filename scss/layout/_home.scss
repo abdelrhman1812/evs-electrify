@@ -529,7 +529,7 @@ header {
 
     .data {
 
-        height: 60vh;
+        height: 70vh;
         overflow: hidden;
         background-size: cover;
         background-position: center;
@@ -573,6 +573,7 @@ header {
 
 
             .item {
+                padding: 20px;
                 display: flex;
                 align-items: center;
                 flex-direction: column;

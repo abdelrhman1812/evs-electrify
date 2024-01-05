@@ -137,7 +137,7 @@ let sec = document.getElementById('sec')
 console.log(sec);
 
 const countDown = () => {
-    const selectedTime = new Date("Dec 20, 2023");
+    const selectedTime = new Date("jan 30, 2024");
 
     const updateCountdown = () => {
         const now = new Date().getTime();

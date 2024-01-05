@@ -44,6 +44,10 @@
     & figure {
         width: 50%;
         position: relative;
+
+        @include responsive-mob(767px) {
+            width: 80% !important;
+        }
     }
 
     & i {

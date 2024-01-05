@@ -2,14 +2,21 @@ nav.navbar {
     z-index: 2;
     width: 100%;
     position: fixed;
+    transition: all 0.5s;
 
+    .collapse {
+        transition: all 0.5s;
+
+    }
 
     .navbar-toggler {
+        transition: all 0.5s;
+
         i {
-            color: $main-color;
-            border: 1px solid $dark-main;
             padding: 10px;
             border-radius: 7px;
+            color: $main-color;
+            border: 1px solid $dark-main;
         }
     }
 
@@ -61,7 +68,6 @@ nav.navbar {
 
     ul {
 
-        transition: all 3s;
 
 
         @include responsive-mob(991px) {
@@ -73,7 +79,6 @@ nav.navbar {
             bottom: 0;
             width: 80%;
             padding-top: 60px;
-            transition: all 3s;
 
             li {
                 padding: 10px 20px;
